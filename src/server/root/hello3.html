@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HelloWorld3</title>
+</head>
+<body>
+<img id="myImage" onclick="changeImage()" src="cat.png">
+<p>按下鼠标，切换图片</p>
+
+<script>
+    function changeImage() {
+        var image = document.getElementById('myImage');
+
+        if (image.src.match("mouse.png")) {
+            image.src = "cat.png";
+        } else {
+            image.src = "mouse.png"
+        }
+    }
+</script>
+</body>
+</html>
